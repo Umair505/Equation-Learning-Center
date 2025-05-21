@@ -38,17 +38,11 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <img
+        <a href="/"><img 
           className="h-10 mx-2 md:h-12 w-auto object-contain cursor-pointer"
           src={logo}
           alt="Logo"
-          onClick={() => {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
-          }}
-        />
+        /></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

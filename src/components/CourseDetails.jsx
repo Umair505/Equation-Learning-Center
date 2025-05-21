@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import instructorImg from '../assets/p2.png';
+import { Link } from 'react-router';
 
 const CourseDetails = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -213,6 +214,7 @@ const CourseDetails = () => {
                 <span className="ml-2 text-indigo-200 line-through">৳১৫০০</span>
                 <span className="ml-auto bg-white text-indigo-600 px-3 py-1 rounded-full text-sm font-bold">৩৩% ছাড়</span>
               </div>
+              <Link to="/course-enroll">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
@@ -220,6 +222,7 @@ const CourseDetails = () => {
               >
                 কোর্স কিনুন
               </motion.button>
+              </Link>
             </motion.div>
           </div>
         </div>
