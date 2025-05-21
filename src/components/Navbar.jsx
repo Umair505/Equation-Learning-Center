@@ -39,9 +39,15 @@ const Navbar = () => {
           </ul>
         </div>
         <img
-          className="h-10 mx-2 md:h-12 w-auto object-contain"
+          className="h-10 mx-2 md:h-12 w-auto object-contain cursor-pointer"
           src={logo}
           alt="Logo"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
         />
       </div>
       <div className="navbar-center hidden lg:flex">

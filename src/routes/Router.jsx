@@ -4,6 +4,8 @@ import About from "../pages/About";
 import ErrorPage from "../pages/ErrorPage";
 import Course from "../pages/Course";
 import Home from "../pages/Home";
+import CourseDetails from "../components/CourseDetails";
+import CourseEnroll from "../pages/CourseEnroll";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: '/course',
         element: <Course/>,
+      },
+      {
+        path: '/course-details',
+        element: <CourseDetails/>,
+      },
+      {
+        path: '/course-enroll',
+        element: <CourseEnroll/>,
       },
       
     ],
